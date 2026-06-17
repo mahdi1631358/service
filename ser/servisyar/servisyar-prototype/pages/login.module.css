@@ -1,0 +1,105 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+}
+
+.loginCard {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 24px;
+  padding: 36px 28px;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logoSection { text-align: center; margin-bottom: 8px; }
+.logoIcon { font-size: 52px; display: block; }
+.appName { font-size: 24px; font-weight: 800; color: #fff; margin: 8px 0 4px; }
+.appSub { font-size: 13px; color: rgba(255,255,255,0.6); margin: 0; }
+
+.tabs {
+  display: flex;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabActive {
+  background: #4A90E2;
+  color: white;
+  font-weight: 700;
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+.label { font-size: 13px; color: rgba(255,255,255,0.7); }
+
+.input {
+  background: rgba(255,255,255,0.08);
+  border: 1.5px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-family: inherit;
+  color: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus { border-color: #4A90E2; }
+.input::placeholder { color: rgba(255,255,255,0.3); }
+
+.error {
+  background: rgba(231,76,60,0.2);
+  border: 1px solid rgba(231,76,60,0.4);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #ff8a80;
+  text-align: center;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: opacity 0.2s;
+  box-shadow: 0 4px 16px rgba(74,144,226,0.4);
+}
+
+.submitBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.hint {
+  text-align: center;
+  font-size: 11px;
+  color: rgba(255,255,255,0.3);
+  margin: 0;
+}

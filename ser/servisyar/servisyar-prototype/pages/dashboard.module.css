@@ -1,0 +1,121 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.statCard {
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.statBlue { background: linear-gradient(135deg, #4A90E2, #357ABD); color: white; }
+.statOrange { background: linear-gradient(135deg, #F5A623, #E8940E); color: white; }
+.statGreen { background: linear-gradient(135deg, #27AE60, #219150); color: white; }
+.statPurple { background: linear-gradient(135deg, #8E44AD, #7D3C98); color: white; }
+
+.statIcon { font-size: 28px; }
+.statInfo { display: flex; flex-direction: column; }
+.statValue { font-size: 22px; font-weight: 700; line-height: 1.2; }
+.statLabel { font-size: 11px; opacity: 0.9; margin-top: 2px; }
+
+.alertCard {
+  background: #FFF3CD;
+  border: 1px solid #FFEAA7;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #856404;
+}
+
+.premiumTeaser {
+  background: linear-gradient(135deg, #F7971E, #FFD200);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(247,151,30,0.3);
+}
+
+.teaserContent { display: flex; align-items: center; gap: 12px; }
+.teaserIcon { font-size: 32px; }
+.teaserTitle { font-size: 15px; font-weight: 700; color: #333; margin: 0; }
+.teaserSub { font-size: 12px; color: #555; margin: 4px 0 0; }
+.teaserArrow { font-size: 24px; color: #555; transform: rotate(180deg); display: inline-block; }
+
+.section { display: flex; flex-direction: column; gap: 10px; }
+.sectionTitle { font-size: 15px; font-weight: 700; margin: 0 0 4px; color: inherit; }
+
+.orderList { display: flex; flex-direction: column; gap: 8px; }
+
+.orderCard {
+  background: var(--card-bg, #fff);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.orderInfo { display: flex; flex-direction: column; gap: 2px; }
+.orderName { font-size: 14px; font-weight: 600; }
+.orderService { font-size: 12px; color: #666; }
+.orderDate { font-size: 11px; color: #999; }
+
+.statusBadge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.statusPending { background: #FFF3CD; color: #856404; }
+.statusInProgress { background: #CCE5FF; color: #004085; }
+.statusCompleted { background: #D4EDDA; color: #155724; }
+.statusCancelled { background: #F8D7DA; color: #721C24; }
+
+.reminderCard {
+  background: var(--card-bg, #fff);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.reminderRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+}
+
+.reminderName { font-size: 14px; font-weight: 600; margin: 0; }
+.reminderDate { font-size: 12px; color: #666; margin: 2px 0 0; }
+
+.reminderBtn {
+  margin-right: auto;
+  background: #4A90E2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}

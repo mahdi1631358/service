@@ -1,0 +1,8 @@
+دانلود فونت Vazirmatn:
+https://github.com/rastikerdar/vazirmatn/releases/latest
+
+فایل‌های woff2 را اینجا قرار بده:
+- VazirMatn-Regular.woff2
+- VazirMatn-Medium.woff2
+- VazirMatn-Bold.woff2
+- VazirMatn-ExtraBold.woff2

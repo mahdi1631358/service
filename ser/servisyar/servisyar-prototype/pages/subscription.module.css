@@ -1,0 +1,119 @@
+.subscription { display: flex; flex-direction: column; gap: 16px; padding-bottom: 20px; }
+
+/* Active State */
+.activeCard {
+  background: linear-gradient(135deg, #F7971E, #FFD200);
+  border-radius: 20px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(247,151,30,0.4);
+}
+.activeIcon { font-size: 56px; }
+.activeTitle { font-size: 22px; font-weight: 800; margin: 0; color: #333; }
+.activeSub { font-size: 14px; color: #555; margin: 0; }
+.expireDate { background: rgba(255,255,255,0.5); border-radius: 20px; padding: 6px 16px; font-size: 13px; font-weight: 600; color: #333; }
+.featuresList { width: 100%; display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.featureItem { background: rgba(255,255,255,0.4); border-radius: 10px; padding: 10px 14px; font-size: 14px; font-weight: 600; color: #333; }
+
+/* Free Plan */
+.freePlanCard {
+  background: var(--card-bg, #fff);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+.freePlanHeader { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.freePlanIcon { font-size: 32px; }
+.freePlanTitle { font-size: 16px; font-weight: 700; margin: 0; }
+.freePlanSub { font-size: 12px; color: #27AE60; margin: 2px 0 0; font-weight: 600; }
+.limitations { display: flex; flex-direction: column; gap: 6px; }
+.limitTitle { font-size: 13px; font-weight: 600; color: #666; margin: 0 0 6px; }
+.limitItem { font-size: 13px; color: #E74C3C; }
+
+.upgradeTitle { font-size: 18px; font-weight: 800; text-align: center; }
+
+/* Plan Cards */
+.plansContainer { display: flex; flex-direction: column; gap: 12px; }
+
+.planCard {
+  background: var(--card-bg, #fff);
+  border-radius: 16px;
+  padding: 18px;
+  border: 2px solid #eee;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  overflow: hidden;
+}
+
+.planSelected { border-color: #F7971E; box-shadow: 0 4px 16px rgba(247,151,30,0.25); }
+.planRecommended { border-color: #4A90E2; }
+.planSelected.planRecommended { border-color: #F7971E; }
+
+.recommendBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4A90E2;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 0 0 12px 0;
+}
+
+.savingBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #27AE60;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 0 0 0 12px;
+}
+
+.planHeader { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; margin-top: 8px; }
+.planIcon { font-size: 32px; }
+.planName { font-size: 16px; font-weight: 700; margin: 0; }
+.planPrice { font-size: 20px; font-weight: 800; margin: 4px 0 0; color: #F7971E; }
+.planPeriod { font-size: 13px; font-weight: 400; color: #666; }
+
+.planFeatures { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
+.planFeatureItem { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.checkIcon { font-size: 14px; }
+
+.selectIndicator { font-size: 13px; color: #999; font-weight: 600; }
+.selectIndicatorActive { color: #F7971E; }
+
+.purchaseBtn {
+  background: linear-gradient(135deg, #F7971E, #FFD200);
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: inherit;
+  cursor: pointer;
+  color: #333;
+  box-shadow: 0 4px 16px rgba(247,151,30,0.4);
+}
+
+.secureNote { text-align: center; font-size: 12px; color: #666; margin: 0; }
+
+/* Confirm Modal */
+.modalOverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 20px; }
+.modal { background: var(--bg, #f5f5f5); border-radius: 24px; padding: 32px 24px; width: 100%; max-width: 380px; display: flex; flex-direction: column; gap: 16px; align-items: center; }
+.modalIcon { font-size: 52px; }
+.modalTitle { font-size: 18px; font-weight: 800; margin: 0; text-align: center; }
+.confirmDetails { width: 100%; background: var(--card-bg, #fff); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.confirmRow { display: flex; justify-content: space-between; font-size: 14px; }
+.confirmPrice { font-weight: 700; color: #F7971E; font-size: 16px; }
+.modalActions { display: flex; gap: 10px; width: 100%; }
+.cancelBtn { flex: 1; padding: 12px; border-radius: 12px; border: 1.5px solid #ddd; background: transparent; font-size: 14px; font-family: inherit; cursor: pointer; color: inherit; }
+.confirmBtn { flex: 2; padding: 12px; border-radius: 12px; border: none; background: linear-gradient(135deg, #F7971E, #FFD200); color: #333; font-size: 14px; font-weight: 800; font-family: inherit; cursor: pointer; }

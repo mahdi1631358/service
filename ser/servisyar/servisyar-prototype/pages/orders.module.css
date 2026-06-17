@@ -1,0 +1,104 @@
+.orders { display: flex; flex-direction: column; gap: 12px; }
+
+.filterTabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; }
+
+.filterTab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1.5px solid #ddd;
+  background: transparent;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.filterTabActive {
+  background: #4A90E2;
+  border-color: #4A90E2;
+  color: white;
+}
+
+.addOrderBtn {
+  background: linear-gradient(135deg, #27AE60, #219150);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(39,174,96,0.3);
+}
+
+.list { display: flex; flex-direction: column; gap: 10px; }
+
+.orderCard {
+  background: var(--card-bg, #fff);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.orderHeader { display: flex; align-items: center; justify-content: space-between; }
+
+.orderName { font-size: 15px; font-weight: 700; }
+
+.statusBadge { padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.statusPending { background: #FFF3CD; color: #856404; }
+.statusInProgress { background: #CCE5FF; color: #004085; }
+.statusCompleted { background: #D4EDDA; color: #155724; }
+.statusCancelled { background: #F8D7DA; color: #721C24; }
+
+.orderMeta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #666;
+}
+
+.nextService {
+  font-size: 12px;
+  color: #F5A623;
+  background: #FFF9ED;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.quickStatus {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.quickBtn {
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: transparent;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.quickBtn:hover { background: #f0f0f0; }
+
+/* Modal */
+.modalOverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: flex-end; z-index: 100; }
+.modal { background: var(--bg, #f5f5f5); border-radius: 24px 24px 0 0; padding: 24px 20px 32px; width: 100%; display: flex; flex-direction: column; gap: 12px; max-height: 85vh; overflow-y: auto; }
+.modalTitle { font-size: 17px; font-weight: 700; margin: 0; }
+.formGroup { display: flex; flex-direction: column; gap: 5px; }
+.label { font-size: 13px; color: #666; font-weight: 500; }
+.input { border: 1.5px solid #ddd; border-radius: 10px; padding: 10px 12px; font-size: 14px; font-family: inherit; background: var(--card-bg, #fff); color: inherit; outline: none; }
+.input:focus { border-color: #4A90E2; }
+.modalActions { display: flex; gap: 10px; margin-top: 4px; }
+.cancelBtn { flex: 1; padding: 12px; border-radius: 12px; border: 1.5px solid #ddd; background: transparent; font-size: 14px; font-family: inherit; cursor: pointer; color: inherit; }
+.saveBtn { flex: 2; padding: 12px; border-radius: 12px; border: none; background: #27AE60; color: white; font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer; }
