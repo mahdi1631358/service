@@ -1,0 +1,36 @@
+.reports { display: flex; flex-direction: column; gap: 14px; padding-bottom: 16px; }
+
+.periodToggle { display: flex; background: var(--card-bg, #fff); border-radius: 12px; padding: 4px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+.periodBtn { flex: 1; padding: 9px; border: none; background: transparent; font-family: inherit; font-size: 14px; border-radius: 9px; cursor: pointer; color: inherit; }
+.periodActive { background: #4A90E2; color: white; font-weight: 700; }
+
+.summaryGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.summaryCard { background: var(--card-bg, #fff); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 6px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+.summaryIcon { font-size: 28px; }
+.summaryValue { font-size: 22px; font-weight: 700; color: #4A90E2; }
+.summaryLabel { font-size: 12px; color: #666; text-align: center; }
+
+.chartCard { background: var(--card-bg, #fff); border-radius: 14px; padding: 16px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+.chartTitle { font-size: 14px; font-weight: 700; margin: 0 0 12px; }
+
+.section { background: var(--card-bg, #fff); border-radius: 14px; padding: 16px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+
+/* Premium Lock */
+.lockCard { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 20px 0 8px; }
+.lockIcon { font-size: 36px; }
+.lockTitle { font-size: 15px; font-weight: 700; margin: 0; }
+.lockSub { font-size: 13px; color: #666; margin: 0; text-align: center; }
+.upgradeBtn { background: linear-gradient(135deg, #F7971E, #FFD200); border: none; border-radius: 20px; padding: 10px 24px; font-size: 13px; font-weight: 700; font-family: inherit; cursor: pointer; color: #333; margin-top: 4px; }
+
+/* Top Customers */
+.topCustomerList { display: flex; flex-direction: column; gap: 10px; }
+.topCustomerRow { display: flex; align-items: center; gap: 12px; }
+.rank { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, #F7971E, #FFD200); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+.topCustomerInfo { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.topName { font-size: 14px; font-weight: 600; }
+.topSub { font-size: 12px; color: #666; }
+.topRevenue { font-size: 13px; font-weight: 600; color: #27AE60; }
+
+/* Backup */
+.backupCard { display: flex; align-items: center; justify-content: space-between; font-size: 14px; }
+.backupBtn { background: #4A90E2; color: white; border: none; border-radius: 8px; padding: 8px 14px; font-family: inherit; font-size: 13px; cursor: pointer; }

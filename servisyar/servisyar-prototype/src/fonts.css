@@ -1,0 +1,47 @@
+/*
+  سرویس‌یار - فونت محلی (بدون هیچ CDN خارجی)
+  فایل‌های woff2 را از:
+  https://github.com/rastikerdar/vazirmatn/releases/latest
+  دانلود کن و در پوشه /fonts/ بذار
+*/
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/VazirMatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/VazirMatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/VazirMatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/VazirMatn-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback اگه فونت لود نشد */
+:root {
+  --font-main: 'Vazirmatn', 'Tahoma', 'Arial', sans-serif;
+}
+
+* {
+  font-family: var(--font-main);
+}

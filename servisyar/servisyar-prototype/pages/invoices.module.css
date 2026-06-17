@@ -1,0 +1,60 @@
+.invoices { display: flex; flex-direction: column; gap: 12px; }
+.filterTabs { display: flex; gap: 6px; overflow-x: auto; }
+.tab { padding: 7px 14px; border-radius: 20px; border: 1.5px solid #ddd; background: transparent; font-size: 12px; font-family: inherit; cursor: pointer; white-space: nowrap; color: inherit; }
+.tabActive { background: #4A90E2; border-color: #4A90E2; color: white; }
+.createBtn { background: linear-gradient(135deg, #8E44AD, #7D3C98); color: white; border: none; border-radius: 12px; padding: 13px; font-size: 15px; font-weight: 700; font-family: inherit; cursor: pointer; }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.invoiceCard { background: var(--card-bg, #fff); border-radius: 14px; padding: 14px; cursor: pointer; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+.invHeader { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; }
+.invId { font-size: 12px; color: #999; display: block; }
+.invCustomer { font-size: 15px; font-weight: 700; display: block; }
+.invMeta { display: flex; justify-content: space-between; font-size: 13px; color: #666; }
+.invTotal { font-weight: 700; color: #27AE60; }
+.payBadge { padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.paid { background: #D4EDDA; color: #155724; }
+.unpaid { background: #F8D7DA; color: #721C24; }
+.partial { background: #FFF3CD; color: #856404; }
+
+/* Modal */
+.modalOverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: flex-end; z-index: 100; }
+.modal { background: var(--bg, #f5f5f5); border-radius: 24px 24px 0 0; padding: 24px 20px 32px; width: 100%; display: flex; flex-direction: column; gap: 12px; max-height: 88vh; overflow-y: auto; }
+
+/* Invoice Print Style */
+.invoiceHeader { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+.invoiceLogo { font-size: 16px; font-weight: 700; color: #4A90E2; }
+.invoiceIdBig { font-size: 18px; font-weight: 700; }
+.invoiceCustomerRow { display: flex; gap: 8px; font-size: 14px; }
+.invoiceLabel { color: #666; }
+.invoiceValue { font-weight: 600; }
+
+.itemTable { width: 100%; border-collapse: collapse; font-size: 13px; }
+.itemTable th { background: #f0f0f0; padding: 8px 6px; text-align: right; font-weight: 600; border-bottom: 1px solid #ddd; }
+.itemTable td { padding: 7px 6px; border-bottom: 1px solid #f0f0f0; }
+
+.totalsSection { display: flex; flex-direction: column; gap: 6px; padding-top: 8px; border-top: 1px dashed #ddd; }
+.totalRow { display: flex; justify-content: space-between; font-size: 14px; }
+.discount { color: #E74C3C; }
+.grandTotal { font-size: 16px; font-weight: 700; color: #27AE60; border-top: 2px solid #eee; padding-top: 8px; margin-top: 4px; }
+
+.payStatus { display: flex; align-items: center; gap: 10px; }
+.paidDate { font-size: 12px; color: #666; }
+
+.modalActions { display: flex; gap: 8px; flex-wrap: wrap; }
+.cancelBtn { flex: 1; min-width: 70px; padding: 11px; border-radius: 12px; border: 1.5px solid #ddd; background: transparent; font-size: 13px; font-family: inherit; cursor: pointer; color: inherit; }
+.paidBtn { flex: 2; min-width: 100px; padding: 11px; border-radius: 12px; border: none; background: #27AE60; color: white; font-size: 13px; font-weight: 700; font-family: inherit; cursor: pointer; }
+.printBtn { flex: 1; min-width: 80px; padding: 11px; border-radius: 12px; border: none; background: #4A90E2; color: white; font-size: 13px; font-weight: 600; font-family: inherit; cursor: pointer; }
+
+/* Create form */
+.modalTitle { font-size: 17px; font-weight: 700; margin: 0; }
+.formGroup { display: flex; flex-direction: column; gap: 5px; }
+.label { font-size: 13px; color: #666; font-weight: 500; }
+.sectionLabel { font-size: 14px; font-weight: 700; color: #4A90E2; }
+.input { border: 1.5px solid #ddd; border-radius: 10px; padding: 10px 12px; font-size: 14px; font-family: inherit; background: var(--card-bg, #fff); color: inherit; outline: none; }
+.input:focus { border-color: #4A90E2; }
+.itemRow { display: flex; gap: 6px; }
+.inputSmall { flex: 2; border: 1.5px solid #ddd; border-radius: 8px; padding: 8px; font-size: 13px; font-family: inherit; background: var(--card-bg, #fff); color: inherit; outline: none; }
+.inputTiny { width: 50px; border: 1.5px solid #ddd; border-radius: 8px; padding: 8px; font-size: 13px; font-family: inherit; background: var(--card-bg, #fff); color: inherit; outline: none; text-align: center; }
+.addItemBtn { background: transparent; border: 1.5px dashed #4A90E2; border-radius: 8px; padding: 8px; font-size: 13px; color: #4A90E2; font-family: inherit; cursor: pointer; }
+.twoCol { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.totalPreview { background: #F0FFF4; border-radius: 10px; padding: 12px; font-size: 15px; color: #27AE60; text-align: center; }
+.saveBtn { flex: 2; padding: 12px; border-radius: 12px; border: none; background: #8E44AD; color: white; font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer; }
